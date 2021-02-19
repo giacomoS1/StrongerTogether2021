@@ -9,16 +9,30 @@ public class JumpCalculator : MonoBehaviour
     public float maxJump;
     public float jumpForce;
     public float divider;
-    public RectTransform jumpForceUI;
+    public RectTransform jumpBar;
+    public RectTransform jumpForceUILeft;
+    public RectTransform jumpForceUIRight;
+    public RectTransform jumpForceDiamondUILeft;
+    public RectTransform jumpForceDiamondUIRight;
+    public float max;
+    public float min = 1.218238f;
+    private float jumpUIYPos;
+    private float jumpbarXPos;
+    private float minXDiamonds;
     private void Update()
     {
         updateJump();   //update how powerful the jump is based on distance.
-        
+        jumpUIYPos = jumpForceDiamondUILeft.position.y;
+        jumpbarXPos = jumpBar.position.x;
+        minXDiamonds = jumpForceDiamondUIRight.position.x - jumpbarXPos;
     }
     public void updateJump()
     {
         jumpForce = Mathf.Max(0, maxJump - distance() / divider);
-        jumpForceUI.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, (300 / maxJump) * jumpForce); //update the meter on the ui
+        float size = min +((max / maxJump) * jumpForce);
+        jumpForceUILeft.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, size); //update the meter on the ui
+        jumpForceUIRight.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, size); //update the meter on the ui
+
     }
     float distance()
     {
