@@ -7,6 +7,7 @@ public class JumpCalculator : MonoBehaviour
     public Transform player1;
     public Transform player2;
     public float maxJump;
+    public float godJump;
     public float jumpForce;
     public float divider;
     public RectTransform jumpBar;

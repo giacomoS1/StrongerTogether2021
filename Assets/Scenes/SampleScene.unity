@@ -1141,6 +1141,16 @@ PrefabInstance:
       propertyPath: jumpBar
       value: 
       objectReference: {fileID: 391489309}
+    - target: {fileID: 7605418363043756957, guid: 3913158b97744b7429188e3d64ecc518,
+        type: 3}
+      propertyPath: godJump
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605418363043756957, guid: 3913158b97744b7429188e3d64ecc518,
+        type: 3}
+      propertyPath: maxJump
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7605418363043756958, guid: 3913158b97744b7429188e3d64ecc518,
         type: 3}
       propertyPath: players.Array.data[0]
@@ -1176,5 +1186,21 @@ PrefabInstance:
       propertyPath: aerialMultiplier
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 7605418363256506371, guid: 3913158b97744b7429188e3d64ecc518,
+        type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: 7605418363256506371, guid: 3913158b97744b7429188e3d64ecc518,
+        type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 6.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8548964496030200495, guid: 3913158b97744b7429188e3d64ecc518,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ed01b909001fdd8409f8a3f4de12a9d8,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3913158b97744b7429188e3d64ecc518, type: 3}

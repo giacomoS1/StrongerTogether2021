@@ -62,7 +62,18 @@ public class PuppetMaster : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space)) player.Jump(jumping.jumpForce);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if(currentPlayer == 1) //1 is god, so if the current player is god then do a god's jump.
+            {
+                Debug.Log("God!");
+                player.Jump(jumping.godJump);
+            } else
+            {
+                player.Jump(jumping.jumpForce);
+            }
+
+        }
         
     }
     
