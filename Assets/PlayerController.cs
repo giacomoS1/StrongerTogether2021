@@ -15,10 +15,15 @@ public class PlayerController : MonoBehaviour
     public bool grounded;
     private float velocity;
     private Rigidbody2D rb;
-    
+    private Animator anim;
+    private bool running = false;
+    private bool right = true;
+    private SpriteRenderer sprite;
     private void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
     void Update()
     {
@@ -83,14 +88,33 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-
-
+        if (!running && horizontal != 0)
+        {
+            running = true;
+            anim.SetBool("Running", true);
+        }
+        else if (running && horizontal == 0)
+        {
+            running = false;
+            anim.SetBool("Running", false);
+        }
+        if(horizontal > 0 && !right)
+        {
+            right = true;
+            sprite.flipX = false;
+        } else if (horizontal < 0 && right)
+        {
+            right = false;
+            sprite.flipX = true;
+        }
         transform.Translate(Vector2.right * move); //move the object, Vector2.right = (1, 0). If move is negative, the object will go left.
     }
 
     public void updateHorizontal(float h)
     {
         horizontal += h;
+        anim.SetFloat("h", horizontal);
+        
     }
     public void setHorizontal(float h)
     {
@@ -100,20 +124,20 @@ public class PlayerController : MonoBehaviour
     {
         if(isGrounded())
         {
+            anim.SetBool("Grounded", false);
             rb.AddForce(Vector2.up * force, ForceMode2D.Impulse); //create an impulse force on the rigidbody (physics body) upwards
         }
        
     }
     public bool isGrounded()
     {
-        bool g = Physics2D.OverlapArea(topLeftCorner.position, bottomRightCorner.position, ground); //checks if there is a collider in the overlap area (below the cube) with the ground layer.
-        grounded = g;
-        return g;
+        grounded = Physics2D.OverlapArea(topLeftCorner.position, bottomRightCorner.position, ground); //checks if there is a collider in the overlap area (below the cube) with the ground layer.
+        return grounded;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isGrounded();
+        if(isGrounded()) anim.SetBool("Grounded", true);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
