@@ -128,10 +128,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 0}
   player2: {fileID: 0}
-  maxJump: 10
+  maxJump: 13
+  godJump: 7
   jumpForce: 0
   divider: 50
-  jumpForceUI: {fileID: 0}
+  jumpBar: {fileID: 0}
+  jumpForceUILeft: {fileID: 0}
+  jumpForceUIRight: {fileID: 0}
+  jumpForceDiamondUILeft: {fileID: 0}
+  jumpForceDiamondUIRight: {fileID: 0}
+  max: 0
+  min: 1.218238
 --- !u!114 &7605418363043756958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +156,7 @@ MonoBehaviour:
   players:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 0.01
+  speed: 0.006
 --- !u!114 &7605418363043756959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,8 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcde64592d439354f874e8c39a7473e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  aerialMultiplier: 0
+  speed: 5
+  aerialMultiplier: 0.7
   accelerationSpeed: 0.721
   jumping: {fileID: 7605418363043756957}
   switchPlayer: 49

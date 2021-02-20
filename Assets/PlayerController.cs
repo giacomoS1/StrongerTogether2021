@@ -27,7 +27,6 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        Debug.DrawLine(topLeftCorner.position, bottomRightCorner.position);
         if (horizontal != 0 && grounded) //checks if the absolute value of the key conversion is > 0, meaning a key is pressed (and not cancelled out)
         {
             t += horizontal * Time.deltaTime * (master.speed * master.accelerationSpeed); //updates interpolation, causes acceleration
@@ -61,7 +60,6 @@ public class PlayerController : MonoBehaviour
             foreach (Transform p in rightRays)
             {
                 RaycastHit2D hit = Physics2D.Raycast(p.position, p.TransformDirection(Vector3.right), Mathf.Abs(move));
-                Debug.DrawRay(p.position, p.TransformDirection(Vector2.right), Color.red, Mathf.Abs(move));
                 if (hit.collider != null)
                 {
                     move = hit.point.x - p.position.x;

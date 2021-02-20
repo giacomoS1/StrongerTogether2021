@@ -41,6 +41,9 @@ TagManager:
   - name: bg
     uniqueID: 4100645409
     locked: 0
+  - name: Environment
+    uniqueID: 3995556223
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -49,7 +52,4 @@ TagManager:
     locked: 0
   - name: Player 1
     uniqueID: 1277752077
-    locked: 0
-  - name: Environment
-    uniqueID: 3995556223
     locked: 0

@@ -241,7 +241,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -194321887
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5bf35850fd34340479d249585c9788c4, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -365,7 +365,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -299411073
-  m_SortingLayer: 3
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5bf35850fd34340479d249585c9788c4, type: 3}
   m_Color: {r: 0.6509434, g: 0.32755068, b: 0, a: 1}
@@ -532,6 +532,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1529614247 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7425294754741392815, guid: 7ef47376813c5494e882fcfbd6126682,
+    type: 3}
+  m_PrefabInstance: {fileID: 5112427952970395715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2056571260 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 839542996073587324, guid: fb0f2124588099b4e853e8d475095dcf,
@@ -892,12 +898,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ef47376813c5494e882fcfbd6126682, type: 3}
---- !u!224 &5112427952970395716 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8622487522332513321, guid: 7ef47376813c5494e882fcfbd6126682,
-    type: 3}
-  m_PrefabInstance: {fileID: 5112427952970395715}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5112427952970395717 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2990277108618732291, guid: 7ef47376813c5494e882fcfbd6126682,
@@ -1120,7 +1120,7 @@ PrefabInstance:
         type: 3}
       propertyPath: jumpForceUIRight
       value: 
-      objectReference: {fileID: 5112427952970395716}
+      objectReference: {fileID: 1529614247}
     - target: {fileID: 7605418363043756957, guid: 3913158b97744b7429188e3d64ecc518,
         type: 3}
       propertyPath: max

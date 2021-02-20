@@ -65,11 +65,11 @@
     <Compile Include="Assets\CameraMovement.cs" />
     <Compile Include="Assets\FPSCounter.cs" />
     <Compile Include="Assets\JumpCalculator.cs" />
-    <Compile Include="Assets\Moon.cs" />
     <Compile Include="Assets\MoonScript.cs" />
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\PuppetMaster.cs" />
     <Compile Include="Assets\TransitionAnimationScript.cs" />
+    <Compile Include="Assets\TreeFall.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
