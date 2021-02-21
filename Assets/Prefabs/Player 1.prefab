@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542995535869118}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542995586191506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542995621898250}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542995936712456}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 839542996073587322}
   - component: {fileID: 839542996073587324}
   - component: {fileID: 168412672328287926}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,6 +282,9 @@ MonoBehaviour:
   - {fileID: 839542995621898250}
   - {fileID: 839542995936712456}
   - {fileID: 839542997514226877}
+  walkingMask:
+    serializedVersion: 2
+    m_Bits: 823
   ground:
     serializedVersion: 2
     m_Bits: 256
@@ -316,7 +319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542996330964941}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542996332793794}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542996449171526}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Left Corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542996956973813}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right Corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -436,7 +439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542997202751363}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542997348523630}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839542997514226877}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

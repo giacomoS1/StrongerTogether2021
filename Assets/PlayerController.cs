@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public Transform bottomRightCorner;
     public Transform[] rightRays;
     public Transform[] leftRays;
+    public LayerMask walkingMask;
     public LayerMask ground;
     public float t;
     public float horizontal = 0;
@@ -59,7 +60,7 @@ public class PlayerController : MonoBehaviour
         {
             foreach (Transform p in rightRays)
             {
-                RaycastHit2D hit = Physics2D.Raycast(p.position, p.TransformDirection(Vector3.right), Mathf.Abs(move));
+                RaycastHit2D hit = Physics2D.Raycast(p.position, p.TransformDirection(Vector3.right), Mathf.Abs(move), walkingMask);
                 Debug.DrawRay(p.position, p.TransformDirection(Vector2.left), Color.red, Mathf.Abs(move));
                 if (hit.collider != null)
                 {
@@ -72,7 +73,7 @@ public class PlayerController : MonoBehaviour
         {
             foreach (Transform p in leftRays)
             {
-                RaycastHit2D hit = Physics2D.Raycast(p.position, p.TransformDirection(Vector2.left), Mathf.Abs(move));
+                RaycastHit2D hit = Physics2D.Raycast(p.position, p.TransformDirection(Vector2.left), Mathf.Abs(move), walkingMask);
                 Debug.DrawRay(p.position, p.TransformDirection(Vector2.left), Color.red, Mathf.Abs(move));
                 if (hit.collider != null)
                 {
