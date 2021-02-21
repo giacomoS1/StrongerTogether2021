@@ -18,3 +18,4 @@ public class PulsatingLight : MonoBehaviour
         light.intensity = Mathf.Abs(Mathf.Sin(n));
     }
 }
+
