@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
             foreach (Transform p in rightRays)
             {
                 RaycastHit2D hit = Physics2D.Raycast(p.position, p.TransformDirection(Vector3.right), Mathf.Abs(move));
+                Debug.DrawRay(p.position, p.TransformDirection(Vector2.left), Color.red, Mathf.Abs(move));
                 if (hit.collider != null)
                 {
                     move = hit.point.x - p.position.x;
@@ -111,7 +112,6 @@ public class PlayerController : MonoBehaviour
     public void updateHorizontal(float h)
     {
         horizontal += h;
-        anim.SetFloat("h", horizontal);
         
     }
     public void setHorizontal(float h)
