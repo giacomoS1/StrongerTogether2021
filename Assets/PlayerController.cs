@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
             if (t > 1) t = 1;
             else if (t < -1) t = -1;   //if t is already at 1 or -1, stop it.
         }
-        else if(horizontal == 0 && grounded)
+        else if (horizontal == 0 && grounded)
         {
             if (velocity < 0)
             {
@@ -97,11 +97,12 @@ public class PlayerController : MonoBehaviour
             running = false;
             anim.SetBool("Running", false);
         }
-        if(horizontal > 0 && !right)
+        if (horizontal > 0 && !right)
         {
             right = true;
             sprite.flipX = false;
-        } else if (horizontal < 0 && right)
+        }
+        else if (horizontal < 0 && right)
         {
             right = false;
             sprite.flipX = true;
@@ -112,7 +113,7 @@ public class PlayerController : MonoBehaviour
     public void updateHorizontal(float h)
     {
         horizontal += h;
-        
+
     }
     public void setHorizontal(float h)
     {
@@ -120,12 +121,12 @@ public class PlayerController : MonoBehaviour
     }
     public void Jump(float force)
     {
-        if(isGrounded())
+        if (isGrounded())
         {
             anim.SetBool("Grounded", false);
             rb.AddForce(Vector2.up * force, ForceMode2D.Impulse); //create an impulse force on the rigidbody (physics body) upwards
         }
-       
+
     }
     public bool isGrounded()
     {
@@ -135,7 +136,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(isGrounded()) anim.SetBool("Grounded", true);
+        if (isGrounded()) anim.SetBool("Grounded", true);
     }
 
     private void OnCollisionExit2D(Collision2D collision)

@@ -837,7 +837,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 748317575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25ce5248c578e8845af8db670ba9f363, type: 3}
+  m_Script: {fileID: 11500000, guid: 9343e31e54008264880a83bae949db81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetRotation: 90
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cf3efa6694eff24f9ad5e6eadf943a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9314e6c501d84a842ae6ccb621553a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &783534321 stripped
@@ -1574,6 +1574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352218876750522456, guid: df53fc590c63f60408cf1fb0139bf43b,
+        type: 3}
+      propertyPath: targetRotation
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4755473170068838576, guid: df53fc590c63f60408cf1fb0139bf43b,
         type: 3}
@@ -2676,7 +2681,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cf3efa6694eff24f9ad5e6eadf943a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 9314e6c501d84a842ae6ccb621553a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2075832472
@@ -3291,6 +3296,11 @@ PrefabInstance:
       propertyPath: sparkle
       value: 
       objectReference: {fileID: 930786989}
+    - target: {fileID: 4352218876750522456, guid: df53fc590c63f60408cf1fb0139bf43b,
+        type: 3}
+      propertyPath: targetRotation
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 6592036374664151870, guid: df53fc590c63f60408cf1fb0139bf43b,
         type: 3}
       propertyPath: m_LocalPosition.x

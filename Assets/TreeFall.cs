@@ -18,17 +18,18 @@ public class TreeFall : MonoBehaviour
     }
     private void Update()
     {
-        if(triggered && t <= 1)
+        if (triggered && t <= 1)
         {
             t += speed * Time.deltaTime;
             Debug.Log(t);
-            if(t >= 0.4f) //this seems to be the magic number, dont question the magic number
+            if (t >= 0.4f) //this seems to be the magic number, dont question the magic number
             {
                 t = 1;
                 tree.rotation = Quaternion.Euler(0, 0, targetRotation);
                 treeCollider.enabled = true;
                 GetComponent<TreeFall>().enabled = false;
-            } else
+            }
+            else
             {
                 tree.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, targetRotation), t);
             }

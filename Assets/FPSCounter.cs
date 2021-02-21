@@ -14,7 +14,7 @@ public class FPSCounter : MonoBehaviour
     {
         text = GetComponent<Text>();
     }
-    
+
     void Update()
     {
 
@@ -25,7 +25,7 @@ public class FPSCounter : MonoBehaviour
             lastSecond = (int)Mathf.Round(Time.realtimeSinceStartup);
         }
         else frames++;
-        if(Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         text.text = "Guessed FPS:\t" + Mathf.Round(1f / Time.deltaTime) + "\n Actual FPS:\t" + secondFrames + "\nRestart: [r]";
     }
 }
