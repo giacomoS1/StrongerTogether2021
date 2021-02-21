@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class FPSCounter : MonoBehaviour
 {
+
     Text text;
     int secondFrames;
     int frames;
@@ -24,6 +25,7 @@ public class FPSCounter : MonoBehaviour
             lastSecond = (int)Mathf.Round(Time.realtimeSinceStartup);
         }
         else frames++;
-        text.text = "Guessed FPS:\t" + Mathf.Round(1f / Time.deltaTime) + "\n Actual FPS:\t" + secondFrames;
+        if(Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        text.text = "Guessed FPS:\t" + Mathf.Round(1f / Time.deltaTime) + "\n Actual FPS:\t" + secondFrames + "\nRestart: [r]";
     }
 }

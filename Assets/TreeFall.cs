@@ -22,7 +22,7 @@ public class TreeFall : MonoBehaviour
         {
             t += speed * Time.deltaTime;
             Debug.Log(t);
-            if(t > 1)
+            if(t >= 0.4f) //this seems to be the magic number, dont question the magic number
             {
                 t = 1;
                 tree.rotation = Quaternion.Euler(0, 0, targetRotation);
