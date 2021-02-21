@@ -67,6 +67,7 @@
     <Compile Include="Assets\JumpCalculator.cs" />
     <Compile Include="Assets\MoonScript.cs" />
     <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\PulsatingLight.cs" />
     <Compile Include="Assets\PuppetMaster.cs" />
     <Compile Include="Assets\TransitionAnimationScript.cs" />
     <Compile Include="Assets\TreeFall.cs" />

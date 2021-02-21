@@ -23,10 +23,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 957
-  m_MinSize: {x: 809, y: 250}
-  m_MaxSize: {x: 22004, y: 10000}
+  m_MinSize: {x: 809, y: 271}
+  m_MaxSize: {x: 22004, y: 10021}
   vertical: 0
-  controlID: 2572
+  controlID: 1996
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 101, y: 242}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 2397
+  controlID: 1997
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,16 +199,16 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: e5ca67136ff2d6e46ac21c7a715a7d2f
   m_Gizmos: 0
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.804158, y: 1.205067, z: 0.13273738}
+    m_Target: {x: 1.2697948, y: 9.812532, z: -16.896484}
     speed: 2
-    m_Value: {x: 9.804158, y: 1.205067, z: 0.13273738}
+    m_Value: {x: 1.2697948, y: 9.812532, z: -16.896484}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -258,9 +258,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.885887
+    m_Target: 9.327096
     speed: 2
-    m_Value: 5.885887
+    m_Value: 9.327096
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -396,7 +396,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 32fbffff0a42000086420000
+      m_ExpandedIDs: 86f9ffff32fbffff0242000092420000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -456,7 +456,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 16906
+  m_LastInspectedObjectInstanceID: -9352
   m_LastVerticalScrollValue: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -524,20 +524,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Textures/Sprite Sheets
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Textures/Sprite Sheets
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\grock\Documents\GitHub\StrongerTogether2021
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9e450000
-    m_LastClickedID: 17822
-    m_ExpandedIDs: 00000000684500006a4500006c4500006e4500009c45000000ca9a3b
+    m_SelectedIDs: aa450000
+    m_LastClickedID: 17834
+    m_ExpandedIDs: 000000007445000076450000784500007a4500007c45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -565,7 +565,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000684500006a4500006c4500006e45000000ca9a3b
+    m_ExpandedIDs: 000000007445000076450000784500007a4500007c45000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -590,9 +590,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 0a420000
-    m_LastClickedInstanceID: 16906
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 78dbffff
+    m_LastClickedInstanceID: -9352
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 923100001a320000fc3c0000c02c000092320000a23d0000f42e0000cc2c00002c490000743000004eb300009a3300007034000010370000243e00001439000000000000d0440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -617,7 +617,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 899}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110
@@ -806,7 +806,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 16906
+  m_LastInspectedObjectInstanceID: -9352
   m_LastVerticalScrollValue: 0
 --- !u!114 &16
 MonoBehaviour:
