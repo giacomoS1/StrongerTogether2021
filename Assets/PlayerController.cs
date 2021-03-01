@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
     }
-    void Update()
+    void FixedUpdate()
     {
         if (horizontal != 0 && grounded) //checks if the absolute value of the key conversion is > 0, meaning a key is pressed (and not cancelled out)
         {
@@ -38,12 +38,12 @@ public class PlayerController : MonoBehaviour
         {
             if (velocity < 0)
             {
-                t += master.speed * master.accelerationSpeed * Time.deltaTime;
+                t += master.speed * master.accelerationSpeed;
                 if (t > 0) t = 0;
             }
             if (velocity > 0)
             {
-                t -= master.speed * master.accelerationSpeed * Time.deltaTime; //start interpolating to 0 acceleration.
+                t -= master.speed * master.accelerationSpeed; //start interpolating to 0 acceleration.
                 if (t < 0) t = 0;
             }
         }
