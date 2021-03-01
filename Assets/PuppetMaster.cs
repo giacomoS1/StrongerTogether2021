@@ -18,6 +18,8 @@ public class PuppetMaster : MonoBehaviour
     public PlayerController[] players;
     public int currentPlayer;
     public PlayerController player;
+    public float activeOutline;
+    Renderer mat;
     AudioSource switchSound;
     bool rightDown;
     bool leftDown;
@@ -26,6 +28,8 @@ public class PuppetMaster : MonoBehaviour
     {
         player = players[currentPlayer];
         switchSound = GetComponent<AudioSource>();
+        mat = player.gameObject.GetComponent<Renderer>();
+        mat.material.SetFloat("FloatOffset", activeOutline);
     }
     void Update()
     {
@@ -56,6 +60,9 @@ public class PuppetMaster : MonoBehaviour
             player.setHorizontal(0);
             currentPlayer = (currentPlayer + 1) % 2;
             player = players[currentPlayer];
+            mat.material.SetFloat("FloatOffset", 0);
+            mat = player.gameObject.GetComponent<Renderer>();
+            mat.material.SetFloat("FloatOffset", activeOutline);
             rightDown = false;
             leftDown = false;
 
@@ -66,7 +73,6 @@ public class PuppetMaster : MonoBehaviour
         {
             if(currentPlayer == 1) //1 is god, so if the current player is god then do a god's jump.
             {
-                Debug.Log("God!");
                 player.Jump(jumping.godJump);
             } else
             {

@@ -156,6 +156,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentPlayer: 0
   player: {fileID: 0}
+  activeOutline: 0.005
 --- !u!114 &7605418363043756952
 MonoBehaviour:
   m_ObjectHideFlags: 0
